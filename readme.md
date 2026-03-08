@@ -16,11 +16,9 @@ Messages are sent to **RabbitMQ exchanges**, routed to **queues**, and consumed 
 ## Technologies Used
 
 - Java 17
-- Spring Boot
-- Spring Web
+- Spring Boot 3.x.x
 - Spring AMQP (RabbitMQ)
 - Maven
-- Lombok
 - Docker
 
 ---
