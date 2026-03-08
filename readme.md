@@ -25,21 +25,21 @@ Messages are sent to **RabbitMQ exchanges**, routed to **queues**, and consumed 
 
 ---
 
-## Endpoints
 
-Base path
+**Running the Application**
 
-```/api/v1```
-
+```mvn spring-boot:run```
 
 ---
 
-## Publish Text Message
+## Endpoints
+### Publish Text Message
+
 
 **Endpoint**
 
 
-GET /api/v1/publish
+```GET /api/v1/publish```
 
 
 **Example**
@@ -51,7 +51,7 @@ http://localhost:8080/api/v1/publish?message=HelloWorld
 **Response**
 
 
-Message published
+```Message published```
 
 
 ---
@@ -61,29 +61,33 @@ Message published
 **Endpoint**
 
 
-POST /api/v1/json/publish
+```POST /api/v1/json/publish```
 
 
 **Example Request**
 
 
-POST http://localhost:8080/api/v1/json/publish
+```POST http://localhost:8080/api/v1/json/publish```
 
 
 **Body**
-
-```json
+```
 {
   "id": 1,
   "name": "John",
   "lastname": "Doe"
-}```
-Response
+}
+```
 
-Message published
-Running RabbitMQ with Docker
+**Response**
 
-Run the following command:
+```Message published```
+
+---
+
+## Running RabbitMQ with Docker
+
+**Run the following command:**
 
 ``` docker run -d \
 --hostname rabbitmq \
@@ -92,29 +96,19 @@ Run the following command:
 -p 15672:15672 \
 rabbitmq:3-management
 RabbitMQ Management UI
-http://localhost:15672 ```
+http://localhost:15672 
+```
 
-From this interface you can monitor and manage RabbitMQ, including:
+From this interface you can monitor and manage RabbitMQ.
 
-Queues
+**URL**
 
-Exchanges
-
-Bindings
-
-Connections
-
-Channels
-
-Messages
+```http://localhost:15672 ```
 
 **Default credentials**
 
-```username: guest
-password: guest```
 
-**Running the Application**
-
-Run the project using Maven:
-
-```mvn spring-boot:run```
+```
+username: guest
+password: guest
+```
