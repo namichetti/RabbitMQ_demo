@@ -1,43 +1,3 @@
-RabbitMQ Spring Boot Demo
-Description
-
-This service demonstrates how to integrate RabbitMQ with Spring Boot to send and receive asynchronous messages.
-
-The application exposes REST endpoints that allow publishing:
-
-Plain text messages
-
-JSON messages
-
-Messages are sent to RabbitMQ exchanges, routed to queues, and consumed by a RabbitMQ consumer that logs the received messages.
-
-Technologies Used
-
-Java 17
-
-Spring Boot
-
-Spring Web
-
-Spring AMQP (RabbitMQ)
-
-Maven
-
-Lombok
-
-Docker
-
-Endpoints
-
-Base path:
-
-/api/v1
-Publish Text Message
-Endpoint
-GET /api/v1/publish
-Example
-```http://localhost:8080/api/v1/publish?message=HelloWorld```
-
 # RabbitMQ Spring Boot Demo
 
 ## Description
@@ -117,8 +77,7 @@ POST http://localhost:8080/api/v1/json/publish
   "id": 1,
   "name": "John",
   "lastname": "Doe"
-}
-```
+}```
 Response
 
 Message published
