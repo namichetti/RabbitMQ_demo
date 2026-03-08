@@ -45,7 +45,7 @@ Messages are sent to **RabbitMQ exchanges**, routed to **queues**, and consumed 
 **Example**
 
 
-http://localhost:8080/api/v1/publish?message=HelloWorld
+```http://localhost:8080/api/v1/publish?message=HelloWorld```
 
 
 **Response**
