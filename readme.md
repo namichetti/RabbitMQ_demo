@@ -1,4 +1,4 @@
-# RabbitMQ Spring Boot Demo
+# RabbitMQ Spring Boot
 
 ## Description
 
